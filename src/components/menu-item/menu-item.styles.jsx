@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
+  height: ${({ size }) => (size ? '380px' : '240px')};
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -22,10 +23,6 @@ export const MenuItemContainer = styled.div`
     & .content {
       opacity: 0.9;
     }
-  }
-
-  &.large {
-    height: 380px;
   }
 
   &:first-child {
