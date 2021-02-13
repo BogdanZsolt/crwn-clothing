@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { BackgroundImageContainer, ContentContainer, MenuItemContainer, SubtitleContainer, TitleContainer } from './menu-item.styles';
+import { BackgroundImageContainer, ContentContainer, ContentSubtitle, ContentTitle, MenuItemContainer } from './menu-item.styles';
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match}) => (
   <MenuItemContainer size={size} 
@@ -10,8 +10,8 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match}) => (
       imageUrl={imageUrl}
     />
     <ContentContainer>
-      <TitleContainer>{title.toUpperCase()}</TitleContainer>
-      <SubtitleContainer>SHOP NOW</SubtitleContainer>
+      <ContentTitle>{title.toUpperCase()}</ContentTitle>
+      <ContentSubtitle>SHOP NOW</ContentSubtitle>
     </ContentContainer>
   </MenuItemContainer>
 )

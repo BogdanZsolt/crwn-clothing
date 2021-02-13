@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const MenuItemContainer = styled.div`
   height: ${({ size }) => (size ? '380px' : '240px')};
   min-width: 30%;
-  height: 240px;
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
@@ -37,8 +36,8 @@ export const MenuItemContainer = styled.div`
 export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
 `;
 
@@ -55,14 +54,14 @@ export const ContentContainer = styled.div`
   position: absolute;
 `;
 
-export const TitleContainer = styled.h1`
+export const ContentTitle = styled.h1`
   font-weight: bold;
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
 `;
 
-export const SubtitleContainer = styled.span`
+export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
 `;
